@@ -48,8 +48,8 @@ Personal Project:
           Messages:
           Messages may be send by actors. Messages contain a sender, reciever, and text block.
           Messages can only be received by actors in the same discussion group. If the
-          senter/receiver are not in the same discussion group, then both are placed in the same
-          discussion group and the messages are recieved. They have an unlimited length.
+          sender/receiver are not in the same discussion group, then both are placed in the same
+          discussion group and the message(s) are recieved. They have an unlimited length.
           Users may type their messages.
           
           Discussion Groups:
@@ -57,4 +57,8 @@ Personal Project:
           maintained by two, or more, actors sending/recieving messages to/from the other(s). Actors may choose to continue
           sending messages, leave the discussion group, or wait. When a discussion group contains one 
           actor, or less, then it ceases to exist. An actor may not start a new discussion without first
-          leaving the current discussion.
+          leaving the current discussion. If an actor outside the discussion group sends a message to
+          an actor inside a discussion group, then the actor will join the discussion group. If that actor
+          was part of another discussion group, then it will fail to send the message. If an actor
+          inside a discussion group sends a message to another actor, then the other actor joins the
+          discussion group or the message fails due to the other actor being in a discussion group already.
