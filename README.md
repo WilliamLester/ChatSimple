@@ -1,4 +1,4 @@
-# ChatSimple
+# DynamicChatSimple
 Personal Project:
 
      Purpose:
